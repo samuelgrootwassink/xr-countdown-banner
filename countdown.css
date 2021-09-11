@@ -1,0 +1,282 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 8 version
+*/
+
+/* General */
+.countdown-container{
+  
+  /* General */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  width: 100%;
+  padding: 20px 10px;
+  border: 5px solid #FF37CB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
+  /* Flex */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  
+
+  /* Background */
+  background-color: black;
+  background-image: url('hourglass.png');
+  background-repeat: no-repeat;
+  background-position: 400px 0%;
+  background-size: auto 100%;
+}
+
+/* Text block  */
+.countdown-text{
+  margin:10px;
+  padding: 5px 30px 15px 10px;
+  background-color:#FF37CB;
+  
+  
+  
+}
+.countdown-text p{
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  word-break: break-word;
+  font-size: 48px;
+  color: #000;
+}
+
+
+/* Timer and button block */
+.timer-container{
+  margin:10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  
+
+}
+
+/* Timer */
+.countdown-timer{
+  margin-right: 40px;
+
+  color: #FF37CB;
+  font-size: 48px;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+} 
+
+.time-caption{
+  margin:0;
+  padding:0;
+
+  font-size: 24px;
+  font-weight: 400;
+ 
+}
+
+.time-component{
+  margin: 0px 20px;
+}
+
+/* Button */
+.countdown-button{
+  margin: 0;
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FF37CB;
+  
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+.countdown-button:hover{
+  background-color: #fff;
+  color: #FF37CB;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1350px){
+    /* General */
+  .countdown-container{
+    padding: 0px 0px;
+    /* align-items: center; */
+    font-weight: 700;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+    background-position: 300px 0%;
+  }
+
+  /* Text Block */
+  .countdown-text p{
+    font-size: 36px;
+  }
+
+  /* Timer and Button */
+  .countdown-timer{
+    margin:10px;
+    font-size: 36px;
+  }
+  .time-caption{
+    font-size: 18px;
+  }
+
+
+  .countdown-button{
+    font-size: 18px;
+    margin: 10px;
+    font-weight: 800;
+  }
+
+  .timer-container{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+@media screen and (max-width: 1080px){
+    /* General */
+  .countdown-container{
+    padding: 0px 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 700;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+
+    background-position: -220px 0%;
+  }
+
+  /* Text Block */
+  .countdown-text p{
+    font-size: 36px;
+  }
+
+  /* Timer and Button */
+  .countdown-timer{
+    margin:10px;
+    font-size: 36px;
+  }
+  .time-caption{
+    font-size: 18px;
+  }
+
+
+  .countdown-button{
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .timer-container{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 652px){
+
+  /* General */
+  .countdown-container{
+    padding: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 700;
+
+    background-image: none;
+  }
+
+  /* Text Block */
+  .countdown-text p{
+    font-size: 36px;
+  }
+
+  /* Timer and Button */
+  .countdown-timer{
+    margin:10px;
+    font-size: 36px;
+  }
+  .time-caption{
+    font-size: 18px;
+  }
+
+
+  .countdown-button{
+    font-size: 18px;
+    margin: 10px;
+    font-weight: 700;
+    
+  }
+
+  .timer-container{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
