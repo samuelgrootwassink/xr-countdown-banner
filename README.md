@@ -1,2 +1,2 @@
 # xrnl-countdown-banner
-Countdown banner voor XR evenementen
+Countdown banner voor XRNL evenementen
